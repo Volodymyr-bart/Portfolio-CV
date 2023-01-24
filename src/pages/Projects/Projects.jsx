@@ -8,7 +8,8 @@ import { projects } from './../../helpers/projectsList';
 
 const Projects = () => {
   const [currentPage, setCurrentPage] = useState(1);
-  const [itemsPerPage, setItemsPerPage] = useState(9);
+  // const [itemsPerPage, setItemsPerPage] = useState(9);
+  const itemsPerPage = 9;
 
   const lastItemIndex = currentPage * itemsPerPage;
 
