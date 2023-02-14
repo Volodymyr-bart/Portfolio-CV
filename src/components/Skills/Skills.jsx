@@ -31,6 +31,7 @@ const Skills = () => {
             <li>Node.js</li>
             <li>Express.js</li>
             <li>MongoDB</li>
+            <li>Mongoose</li>
           </ListSkills>
         </li>
         <li>
