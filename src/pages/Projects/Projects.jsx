@@ -28,17 +28,15 @@ export const Projects = () => {
         <Container>
           <Title>Projects</Title>
           <ProjectsList>
-            {currentList.map((project, index) => {
-              return (
-                <Project
-                  title={project.title}
-                  img={project.img}
-                  key={project.title}
-                  index={index}
-                  development={project.development}
-                />
-              );
-            })}
+            {currentList.map((project, index) => (
+              <Project
+                title={project.title}
+                img={project.img}
+                key={project.title}
+                index={index}
+                development={project.development}
+              />
+            ))}
           </ProjectsList>
           {/* <Pagination
             currentPage={currentPage}
