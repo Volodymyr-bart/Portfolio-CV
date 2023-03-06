@@ -3,9 +3,10 @@ import Container from 'components/Container/Container';
 import Pagination from 'components/Pagination/Pagination';
 import Section from 'components/Section/Section';
 import Title from 'components/Title/Title';
-import { Project } from '../../components/Project/Project';
+
 import { projects } from './../../helpers/projectsList';
 import { ProjectsList } from './Projects.styled';
+import { Project } from 'components/Project/Project';
 
 const Projects = () => {
   const [currentPage, setCurrentPage] = useState(1);
