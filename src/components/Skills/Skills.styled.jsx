@@ -5,12 +5,15 @@ export const ListInfoStyled = styled.ul`
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  /* column-gap: 50px; */
+  row-gap: 50px;
+
   line-height: 1.5;
 
   @media screen and (min-width: 768px) {
     flex-direction: row;
-    gap: 30px;
+    column-gap: 100px;
+    justify-content: center;
+    /* gap: 30px; */
   }
 `;
 export const TitleSkills = styled.p`
@@ -27,7 +30,6 @@ export const ListSkills = styled.ul`
   flex-direction: column;
   list-style: disc;
   row-gap: 10px;
-
   font-size: 14px;
 
   li:hover {
@@ -43,6 +45,7 @@ export const ContainerSkills = styled.ul`
   display: flex;
   flex-direction: column;
   padding: 20px;
+  border-radius: 10px;
 
   box-shadow: var(--box-shadow);
 `;

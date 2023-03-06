@@ -1,7 +1,9 @@
+import { HeaderStyled, HeaderWrapper } from './Header.styled';
+
 const Header = () => {
   return (
-    <header className="header">
-      <div className="header__wrapper">
+    <HeaderStyled>
+      <HeaderWrapper>
         <h1 className="header__title">
           <strong>
             Hi, my name is <em>Vova</em>
@@ -20,8 +22,8 @@ const Header = () => {
         >
           Download CV
         </a>
-      </div>
-    </header>
+      </HeaderWrapper>
+    </HeaderStyled>
   );
 };
 

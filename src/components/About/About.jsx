@@ -1,3 +1,4 @@
+import Title from 'components/Title/Title';
 import avatar from './../../img/avatar/photo_2022-06-03_21-32-26.jpg';
 import {
   AboutText,
@@ -8,7 +9,7 @@ import {
 const About = () => {
   return (
     <>
-      <h2 className="title-1">Summary</h2>
+      <Title>Summary</Title>
       <ContainerAboutStyled>
         <ContainerAvatarStyled>
           <img src={avatar} alt="avatar" />

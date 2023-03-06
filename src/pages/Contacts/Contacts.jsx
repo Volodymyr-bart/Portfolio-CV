@@ -1,31 +1,33 @@
 import Container from 'components/Container/Container';
+import SecondTitle from 'components/SecondTitle/SecondTitle';
 import Section from 'components/Section/Section';
+import Title from 'components/Title/Title';
+import { ContactsList } from './Contacts.styled';
 
 const Contacts = () => {
   return (
     <>
       <Section>
         <Container>
-          <h2 className="title-1">Contacts</h2>
-
-          <ul className="content-list">
-            <li className="content-list__item">
-              <h2 className="title-2">Location</h2>
+          <Title>Contacts</Title>
+          <ContactsList>
+            <li>
+              <SecondTitle>Location</SecondTitle>
               <p>Zhytomyr, Ukraine</p>
             </li>
-            <li className="content-list__item">
-              <h2 className="title-2">Telegram / WhatsApp</h2>
+            <li>
+              <SecondTitle>Telegram / WhatsApp</SecondTitle>
               <p>
                 <a href="tel:+380634864669">+380634864669</a>
               </p>
             </li>
-            <li className="content-list__item">
-              <h2 className="title-2">Email</h2>
+            <li>
+              <SecondTitle>Email</SecondTitle>
               <p>
                 <a href="mailto:bartzh1991@gmail.com">bartzh1991@gmail.com</a>
               </p>
             </li>
-          </ul>
+          </ContactsList>
         </Container>
       </Section>
     </>

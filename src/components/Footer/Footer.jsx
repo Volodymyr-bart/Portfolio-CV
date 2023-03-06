@@ -2,9 +2,10 @@ import instagram from './../img/icons/instagram.svg';
 import gitHub from './../img/icons/gitHub.svg';
 import linkedIn from './../img/icons/linkedIn.svg';
 import Container from 'components/Container/Container';
+import { FooterStyled } from './Footer.styled';
 const Footer = () => {
   return (
-    <footer className="footer">
+    <FooterStyled>
       <Container>
         <div className="footer__wrapper">
           <ul className="social">
@@ -38,7 +39,7 @@ const Footer = () => {
           </div>
         </div>
       </Container>
-    </footer>
+    </FooterStyled>
   );
 };
 

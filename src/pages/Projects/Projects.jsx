@@ -1,9 +1,11 @@
 import Container from 'components/Container/Container';
 import Pagination from 'components/Pagination/Pagination';
 import Section from 'components/Section/Section';
+import Title from 'components/Title/Title';
 import { useState } from 'react';
-import Project from '../../components/project/Project';
+import Project from '../../components/Project/Project';
 import { projects } from './../../helpers/projectsList';
+import { ProjectsList } from './Projects.styled';
 
 const Projects = () => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -22,8 +24,8 @@ const Projects = () => {
     <>
       <Section>
         <Container>
-          <h2 className="title-1">Projects</h2>
-          <ul className="projects">
+          <Title>Projects</Title>
+          <ProjectsList>
             {currentItem.map((project, index) => {
               return (
                 <Project
@@ -35,7 +37,7 @@ const Projects = () => {
                 />
               );
             })}
-          </ul>
+          </ProjectsList>
           <Pagination
             currentPage={currentPage}
             itemsPerPage={itemsPerPage}
