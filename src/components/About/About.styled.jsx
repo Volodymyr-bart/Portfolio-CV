@@ -9,7 +9,6 @@ export const ContainerAboutStyled = styled.div`
   }
 `;
 export const ContainerAvatarStyled = styled.div`
-  box-shadow: var(--box-shadow);
   max-width: 70%;
   margin: 0 auto;
   height: fit-content;
@@ -21,10 +20,12 @@ export const AboutText = styled.div`
   display: flex;
   flex-direction: column;
   row-gap: 10px;
-  margin-top: 30px;
+  padding: 30px;
+  /* margin-top: 30px; */
   font-size: 14px;
   line-height: 1.5;
   letter-spacing: -0.5px;
+  box-shadow: var(--box-shadow);
   @media screen and (min-width: 480px) {
     font-size: 18px;
   }

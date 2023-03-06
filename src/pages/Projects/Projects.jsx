@@ -4,7 +4,6 @@ import Section from 'components/Section/Section';
 import { useState } from 'react';
 import Project from '../../components/project/Project';
 import { projects } from './../../helpers/projectsList';
-// import { page_1, page_2 } from './../../helpers/visibleProjects';
 
 const Projects = () => {
   const [currentPage, setCurrentPage] = useState(1);
