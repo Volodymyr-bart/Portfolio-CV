@@ -17,7 +17,7 @@ const Skills = () => {
             <TitleSkills>Tech Skills</TitleSkills>
             <ListSkills>
               {techSkill.map(el => (
-                <li>{el}</li>
+                <li key={el}>{el}</li>
               ))}
             </ListSkills>
           </li>
@@ -25,7 +25,7 @@ const Skills = () => {
             <TitleSkills>Soft Skills</TitleSkills>
             <ListSkills>
               {softSkill.map(el => (
-                <li>{el}</li>
+                <li key={el}>{el}</li>
               ))}
             </ListSkills>
           </li>
@@ -33,7 +33,7 @@ const Skills = () => {
             <TitleSkills>Languages</TitleSkills>
             <ListSkills>
               {language.map(el => (
-                <li>{el}</li>
+                <li key={el}>{el}</li>
               ))}
             </ListSkills>
           </li>

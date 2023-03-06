@@ -5,12 +5,13 @@ import Section from 'components/Section/Section';
 import Container from 'components/Container/Container';
 import Title from 'components/Title/Title';
 import SecondTitle from 'components/SecondTitle/SecondTitle';
+import { List } from './Education.styled';
 const Education = () => {
   return (
     <Section>
       <Container>
         <Title>Education</Title>
-        <ul className="content-list">
+        <List>
           <li className="content-list__item">
             <SecondTitle>GoIT</SecondTitle>
             <img src={GoIT} alt="LetPy" />
@@ -23,7 +24,7 @@ const Education = () => {
             <SecondTitle>Zhytomyr Polytechnic State University</SecondTitle>
             <img src={Diploma} alt="Diploma" />
           </li>
-        </ul>
+        </List>
       </Container>
     </Section>
   );
