@@ -6,7 +6,8 @@ import Section from 'components/Section/Section';
 import Title from 'components/Title/Title';
 import { projects } from 'helpers/projectsList';
 import { ProjectsList } from './Projects.styled';
-import { Project } from 'components/Project/Project';
+// import { Project } from 'components/Project/Project';
+import { InfoCard } from 'components/InfoCard/InfoCard';
 // import { Project } from 'components/Project/Project';
 // import { ProjectsList } from './Projects.styled';
 // import { projects } from 'helpers/projectsList';
@@ -29,7 +30,7 @@ export const Projects = () => {
           <Title>Projects</Title>
           <ProjectsList>
             {currentList.map((project, index) => (
-              <Project
+              <InfoCard
                 title={project.title}
                 img={project.img}
                 key={project.title}
