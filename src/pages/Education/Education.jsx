@@ -6,6 +6,7 @@ import Container from 'components/Container/Container';
 import Title from 'components/Title/Title';
 import SecondTitle from 'components/SecondTitle/SecondTitle';
 import { List } from './Education.styled';
+
 const Education = () => {
   return (
     <Section>
