@@ -1,16 +1,13 @@
 import { useState } from 'react';
 
 import Container from 'components/Container/Container';
-// import Pagination from 'components/Pagination/Pagination';
+import Pagination from 'components/Pagination/Pagination';
 import Section from 'components/Section/Section';
 import Title from 'components/Title/Title';
 import { projects } from 'helpers/projectsList';
 import { ProjectsList } from './Projects.styled';
-// import { Project } from 'components/Project/Project';
+
 import { InfoCard } from 'components/InfoCard/InfoCard';
-// import { Project } from 'components/Project/Project';
-// import { ProjectsList } from './Projects.styled';
-// import { projects } from 'helpers/projectsList';
 
 export const Projects = () => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -21,7 +18,6 @@ export const Projects = () => {
   const currentList = projects.slice(firstItemIndex, lastItemIndex);
 
   const paginate = pageNumber => setCurrentPage(pageNumber);
-  console.log(paginate);
 
   return (
     <>
@@ -39,12 +35,12 @@ export const Projects = () => {
               />
             ))}
           </ProjectsList>
-          {/* <Pagination
+          <Pagination
             currentPage={currentPage}
             itemsPerPage={itemsPerPage}
             totalItems={projects.length}
             paginate={paginate}
-          /> */}
+          />
         </Container>
       </Section>
     </>
