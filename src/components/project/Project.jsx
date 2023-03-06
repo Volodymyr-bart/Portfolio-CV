@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router-dom';
 import { ProjectStyled } from './Project.styled';
 
-const Project = ({ title, img, index, development }) => {
+export const Project = ({ title, img, index, development }) => {
   return (
     <ProjectStyled>
       <NavLink to={`/project/${index}`}>
@@ -11,5 +11,3 @@ const Project = ({ title, img, index, development }) => {
     </ProjectStyled>
   );
 };
-
-export default Project;

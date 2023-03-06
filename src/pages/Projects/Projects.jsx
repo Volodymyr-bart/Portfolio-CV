@@ -1,9 +1,9 @@
+import { useState } from 'react';
 import Container from 'components/Container/Container';
 import Pagination from 'components/Pagination/Pagination';
 import Section from 'components/Section/Section';
 import Title from 'components/Title/Title';
-import { useState } from 'react';
-import Project from '../../components/Project/Project';
+import { Project } from '../../components/Project/Project';
 import { projects } from './../../helpers/projectsList';
 import { ProjectsList } from './Projects.styled';
 
