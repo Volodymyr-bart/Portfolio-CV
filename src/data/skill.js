@@ -1,5 +1,6 @@
-export const techSkill = [
-  'GIT',
+export const techSkill = [];
+
+export const frontend = [
   'HTML',
   'CSS',
   'Java Script',
@@ -14,10 +15,18 @@ export const techSkill = [
   'Redux',
   'Redux Toolkit',
   'Material UI',
+];
+export const backend = [
   'Node.js',
   'Express.js',
   'MongoDB',
+  'mongoose',
+  'jsonwebtoken',
+  'bcrypt',
+  'multer',
+  'joi',
 ];
+export const utilities = ['GIT', 'GitHubDesktop', 'Postman', 'MongoDB Atlas'];
 
 export const softSkill = [
   'Coordination of activities',
@@ -32,7 +41,7 @@ export const softSkill = [
 ];
 
 export const language = [
-  'English - pre-intermediate',
-  'Ukrainian - native',
+  'English - Intermediate',
+  'Ukrainian - Native',
   'Russian - Fluent',
 ];

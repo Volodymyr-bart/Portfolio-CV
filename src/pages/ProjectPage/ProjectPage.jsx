@@ -40,6 +40,16 @@ const ProjectPage = () => {
             {project.gitHubLink && <BtnGitHub link={project.gitHubLink} />}
           </div>
         </Container>
+        {project.gitHubLink && (
+          <Container>
+            <iframe
+              src={project.livePage}
+              title={project.livePage}
+              width="100%"
+              height="500px"
+            ></iframe>
+          </Container>
+        )}
       </Section>
     </>
   );

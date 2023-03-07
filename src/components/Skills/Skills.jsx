@@ -1,5 +1,5 @@
 import Title from 'components/Title/Title';
-import { language, softSkill, techSkill } from 'data/skill';
+import { backend, frontend, language, softSkill, utilities } from 'data/skill';
 import {
   ContainerSkills,
   ListInfoStyled,
@@ -14,9 +14,17 @@ const Skills = () => {
       <ContainerSkills>
         <ListInfoStyled>
           <li>
-            <TitleSkills>Tech Skills</TitleSkills>
+            <TitleSkills>Front-end Skills</TitleSkills>
             <ListSkills>
-              {techSkill.map(el => (
+              {frontend.map(el => (
+                <li key={el}>{el}</li>
+              ))}
+            </ListSkills>
+          </li>
+          <li>
+            <TitleSkills>Back-end Skills</TitleSkills>
+            <ListSkills>
+              {backend.map(el => (
                 <li key={el}>{el}</li>
               ))}
             </ListSkills>
@@ -33,6 +41,14 @@ const Skills = () => {
             <TitleSkills>Languages</TitleSkills>
             <ListSkills>
               {language.map(el => (
+                <li key={el}>{el}</li>
+              ))}
+            </ListSkills>
+          </li>
+          <li>
+            <TitleSkills>Utilities</TitleSkills>
+            <ListSkills>
+              {utilities.map(el => (
                 <li key={el}>{el}</li>
               ))}
             </ListSkills>

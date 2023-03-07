@@ -10,6 +10,15 @@ import FilmotekaSmall from './../../src/img/projects/FilmotekaSmall.jpg';
 import FilmotekaBig from './../../src/img/projects/FilmotekaBig.jpg';
 const projects = [
   {
+    title: 'Petly',
+    development: 'Command project',
+    skills: 'Rect.js, Node.js, Express, MongoDB, Mongoose',
+    img: defaultSmall,
+    imgBig: defaultPage,
+    gitHubLink: 'https://github.com/Volodymyr-bart/Express-API-App',
+    livePage: 'https://volodymyr-bart.github.io/petly/',
+  },
+  {
     title: 'API Contact',
     development: 'Individual project',
     skills: 'Node.js, Express, MongoDB, Mongoose',
