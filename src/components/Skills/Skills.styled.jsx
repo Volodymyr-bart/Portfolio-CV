@@ -9,6 +9,11 @@ export const ListInfoStyled = styled.ul`
 
   line-height: 1.5;
 
+  li {
+    min-width: 220px;
+    word-wrap: normal;
+  }
+
   @media screen and (min-width: 768px) {
     flex-direction: row;
     column-gap: 100px;

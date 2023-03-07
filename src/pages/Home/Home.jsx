@@ -12,8 +12,8 @@ const Home = () => {
         <Container>
           <About />
         </Container>
-      </Section>
-      <Section>
+        {/* </Section> */}
+        {/* <Section> */}
         <Container>
           <Skills />
         </Container>

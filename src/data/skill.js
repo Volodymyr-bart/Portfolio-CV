@@ -35,7 +35,7 @@ export const softSkill = [
   'Self-motivation',
   'Teamwork',
   'Quiet',
-  'Communicative skills/Social skills',
+  'Communicative skills',
   'Versatile',
   'Honest',
 ];
