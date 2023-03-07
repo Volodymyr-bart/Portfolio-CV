@@ -1,5 +1,11 @@
 import Title from 'components/Title/Title';
-import { backend, frontend, language, softSkill, utilities } from 'data/skill';
+import {
+  backend,
+  frontend,
+  language,
+  softSkill,
+  utilities,
+} from 'helpers/skill';
 import {
   ContainerSkills,
   ListInfoStyled,
