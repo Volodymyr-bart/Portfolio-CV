@@ -4,6 +4,8 @@ import BtnGitHub from '../../components/BtnGitHub/BtnGitHub';
 import { projects } from '../../helpers/projectsList';
 import Section from 'components/Section/Section';
 import Container from 'components/Container/Container';
+import { Buttons, IframeStyled } from './ProjectPage.styled';
+import SecondTitle from 'components/SecondTitle/SecondTitle';
 
 const ProjectPage = () => {
   const { id } = useParams();
@@ -23,36 +25,56 @@ const ProjectPage = () => {
             </button>
           </Link>
           <div className="project-details">
-            <h1 className="title-1">{project.title}</h1>
-
-            <img
-              src={project.imgBig}
-              alt={project.title}
-              className="project-details__cover"
-            />
+            <SecondTitle>{project.title}</SecondTitle>
+            {project.livePage && (
+              <IframeStyled
+                src={project.livePage}
+                title={project.livePage}
+              ></IframeStyled>
+            )}
             <div className="project-details__desc">
               <p>{project.development}</p>
             </div>
             <div className="project-details__desc">
               <p>{project.skills}</p>
             </div>
-
-            {project.gitHubLink && <BtnGitHub link={project.gitHubLink} />}
+            <Buttons>
+              {project.livePage && (
+                <BtnGitHub title="Live page" link={project.livePage} />
+              )}
+              {project.frontCode && (
+                <BtnGitHub title="Fron-end code" link={project.frontCode} />
+              )}
+              {project.backCode && (
+                <BtnGitHub title="Back-end code" link={project.backCode} />
+              )}
+            </Buttons>
           </div>
         </Container>
-        {project.gitHubLink && (
-          <Container>
-            <iframe
-              src={project.livePage}
-              title={project.livePage}
-              width="100%"
-              height="500px"
-            ></iframe>
-          </Container>
-        )}
       </Section>
     </>
   );
 };
 
 export default ProjectPage;
+
+// {
+//   /* <img
+//               src={project.imgBig}
+//               alt={project.title}
+//               className="project-details__cover"
+//             /> */
+// }
+
+// {
+//   /* {project.livePage && (
+//           <Container>
+//             <IframeStyled
+//               src={project.livePage}
+//               title={project.livePage}
+//               // width="500px"
+//               // height="500px"
+//             ></IframeStyled>
+//           </Container>
+//         )} */
+// }

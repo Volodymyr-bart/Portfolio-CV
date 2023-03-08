@@ -15,16 +15,9 @@ const projects = [
     skills: 'Rect.js, Node.js, Express, MongoDB, Mongoose',
     img: defaultSmall,
     imgBig: defaultPage,
-    gitHubLink: 'https://github.com/Volodymyr-bart/Express-API-App',
     livePage: 'https://volodymyr-bart.github.io/petly/',
-  },
-  {
-    title: 'API Contact',
-    development: 'Individual project',
-    skills: 'Node.js, Express, MongoDB, Mongoose',
-    img: defaultSmall,
-    imgBig: defaultPage,
-    gitHubLink: 'https://github.com/Volodymyr-bart/Express-API-App',
+    frontCode: 'https://github.com/Volodymyr-bart/petly',
+    backCode: 'https://github.com/Volodymyr-bart/REST-API-petly',
   },
   {
     title: 'Wallet',
@@ -33,17 +26,20 @@ const projects = [
       'HTML, CSS, SASS, BEM, JS, RestAPI, Parcel, React.js, Redux, Redux Toolkit, StyledComponent, MaterialUI, FireBase',
     img: defaultSmall,
     imgBig: defaultPage,
-    gitHubLink: 'https://github.com/DmitriyR90/Wallet',
+    frontCode: 'https://github.com/DmitriyR90/Wallet',
+    // livePage: 'https://volodymyr-bart.github.io/petly/',
   },
 
   {
     title: 'Phonebook',
     development: 'Individual project',
     skills:
-      'HTML, CSS, SASS, BEM, JS, RestAPI, Parcel, React.js, Redux, Redux Toolkit, StyledComponent, MaterialUI',
+      'HTML, CSS, SASS, BEM, JS, RestAPI, Parcel, React.js, Redux, Redux Toolkit, StyledComponent, MaterialUI, Node.js, Express, MongoDB, Mongoose',
     img: defaultSmall,
     imgBig: defaultPage,
-    gitHubLink: 'https://github.com/Volodymyr-bart/goit-react-hw-08-phonebook',
+    frontCode: 'https://github.com/Volodymyr-bart/goit-react-hw-08-phonebook',
+    livePage: 'https://volodymyr-bart.github.io/PhoneBook/',
+    backCode: 'https://github.com/Volodymyr-bart/Express-API-App',
   },
   {
     title: 'Movie Catalog',
@@ -51,7 +47,8 @@ const projects = [
     skills: 'HTML, CSS, SASS, BEM, JS, React.js, Rest API',
     img: defaultSmall,
     imgBig: defaultPage,
-    gitHubLink: 'https://github.com/Volodymyr-bart/goit-react-hw-05-movies',
+    frontCode: 'https://github.com/Volodymyr-bart/goit-react-hw-05-movies',
+    livePage: 'https://volodymyr-bart.github.io/goit-react-hw-05-movies/',
   },
   {
     title: 'Info Country',
@@ -59,7 +56,8 @@ const projects = [
     skills: 'HTML, CSS, SASS, BEM, JS, React.js, Rest API',
     img: defaultSmall,
     imgBig: defaultPage,
-    gitHubLink: 'https://github.com/Volodymyr-bart/Api-flags',
+    frontCode: 'https://github.com/Volodymyr-bart/Api-flags',
+    livePage: 'https://country-info-hazel.vercel.app/',
   },
   {
     title: 'Filmoteka',
@@ -67,7 +65,8 @@ const projects = [
     skills: 'HTML, CSS, SASS, BEM, JS, RestAPI, Parcel, FireBase',
     img: FilmotekaSmall,
     imgBig: FilmotekaBig,
-    gitHubLink: 'https://github.com/Volodymyr-bart/Filmoteka',
+    frontCode: 'https://github.com/Volodymyr-bart/Filmoteka',
+    livePage: 'https://volodymyr-bart.github.io/Filmoteka/',
   },
   {
     title: 'Image Finder',
@@ -75,7 +74,8 @@ const projects = [
     skills: 'HTML, CSS, SASS, BEM, JS',
     img: defaultSmall,
     imgBig: defaultPage,
-    gitHubLink: 'https://github.com/Volodymyr-bart/goit-js-hw-11',
+    frontCode: 'https://github.com/Volodymyr-bart/goit-js-hw-11',
+    livePage: 'https://volodymyr-bart.github.io/goit-js-hw-11/',
   },
   {
     title: 'Country Info',
@@ -83,7 +83,8 @@ const projects = [
     skills: 'HTML, CSS, SASS, BEM, JS',
     img: defaultSmall,
     imgBig: defaultPage,
-    gitHubLink: 'https://github.com/Volodymyr-bart/goit-js-hw-10',
+    frontCode: 'https://github.com/Volodymyr-bart/goit-js-hw-10',
+    livePage: 'https://volodymyr-bart.github.io/goit-js-hw-10/',
   },
 
   {
@@ -92,7 +93,8 @@ const projects = [
     skills: 'HTML, CSS, SASS, BEM, JS',
     img: defaultSmall,
     imgBig: defaultPage,
-    gitHubLink: 'https://github.com/Volodymyr-bart/goit-js-hw-09',
+    frontCode: 'https://github.com/Volodymyr-bart/goit-js-hw-09',
+    livePage: 'https://volodymyr-bart.github.io/goit-js-hw-09/',
   },
   {
     title: 'Ice Cream',
@@ -100,7 +102,8 @@ const projects = [
     skills: 'HTML, CSS, SASS, BEM, JS',
     img: IceCreamSmall,
     imgBig: IceCreamBig,
-    gitHubLink: 'https://github.com/Volodymyr-bart/ice-cream',
+    frontCode: 'https://github.com/Volodymyr-bart/ice-cream',
+    livePage: 'https://volodymyr-bart.github.io/ice-cream/',
   },
   {
     title: 'GoCorona',
@@ -108,7 +111,8 @@ const projects = [
     skills: 'HTML, CSS, SASS, BEM, JS',
     img: GocornaSmall,
     imgBig: GocornaBig,
-    gitHubLink: 'https://github.com/Volodymyr-bart/gocorona',
+    frontCode: 'https://github.com/Volodymyr-bart/gocorona',
+    livePage: 'https://volodymyr-bart.github.io/gocorona/',
   },
   {
     title: 'Web Studio',
@@ -116,7 +120,8 @@ const projects = [
     skills: 'HTML, CSS, SASS, BEM, JS',
     img: WebSmall,
     imgBig: WebBig,
-    gitHubLink: 'https://github.com/Volodymyr-bart/Web-studio-GOIT',
+    frontCode: 'https://github.com/Volodymyr-bart/Web-studio-GOIT',
+    livePage: 'https://volodymyr-bart.github.io/Web-studio-GOIT/',
   },
 ];
 
